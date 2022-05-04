@@ -25,6 +25,6 @@ for reciever in emailList:
     server.quit()
 df = pd.read_excel('messages.xlsx') #Here we read the excel
 df.iloc[11:1001,:1] = np.nan #Here we are selecting from the first column upto the first row only and from the 11th row up to the 1000 and making the values null.
-df.to_excel('location_of_new_file.xlsx') #Here we are saving the excel with the modifications we made.
+df.to_excel('messages.xlsx') #Here we are saving the excel with the modifications we made.
 
 
